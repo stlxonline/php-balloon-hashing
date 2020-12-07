@@ -46,7 +46,7 @@
 		{
 			$t .= $param;
 		}
-	   return hash('sha256', $t, TRUE);
+		return hash('sha256', $t, TRUE);
 	}
 
 	/*
@@ -130,11 +130,11 @@
 				$cnt += 1;
 				for($i=0;$i<$delta;$i++)
 				{
-					$other  = bchexdec(hash_func_hex(array($cnt, $salt, $t, $s, $i)));
+					$other = bchexdec(hash_func_hex(array($cnt, $salt, $t, $s, $i)));
 					$n = bcmod($other, strval($space_cost));
-					$cnt   += 1;
+					$cnt += 1;
 					$buf[$s] = hash_func(array($cnt, $buf[$s], $buf[$n]));
-					$cnt   += 1;
+					$cnt += 1;
 				}
 			}
 		}

@@ -1,5 +1,6 @@
 # php-balloon-hashing
-Balloon hashing algorithm implementation written in PHP
+Balloon hashing algorithm implementation written in PHP. All credit to Dan Boneh, Henry Corrigan-Gibbs, and Stuart Schechter. For more information see
+the [research paper](https://eprint.iacr.org/2016/027.pdf) or their [website](https://crypto.stanford.edu/balloon/) for this project. Based on [python implementation](https://github.com/nachonavarro/balloon-hashing).
 
 # USAGE:
 

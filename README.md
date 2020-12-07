@@ -20,8 +20,10 @@ $time_cost = 18;
 $space_cost = 24;
 ```
 
-Also, you can change the main hashing algorithm ([more info](https://www.php.net/manual/es/function.hash.php)) used on hash_func_hex function:
+Also, you can change the main hashing algorithm ([more info](https://www.php.net/manual/es/function.hash.php)) used on hash_func_hex and hash_func functions:
 
 ```php
+return hash('sha256', $t, TRUE);
+
 return hash('sha256', $t);
 ```
